@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee">
+  <application>
+    <default-render-kit-id>oracle.adf.rich</default-render-kit-id>
+  </application>
+  <converter>
+    <converter-id>B2ZConverter</converter-id>
+    <converter-class>de.hahn.blog.convertersample.view.converter.MyB2ZConverter</converter-class>
+  </converter>
+</faces-config>
