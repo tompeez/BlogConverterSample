@@ -15,7 +15,8 @@ public class MyB2ZConverter implements Converter {
 
     public String getAsString(FacesContext facesContext, UIComponent uIComponent, Object object) {
         if (object != null) {
-            return object.toString().replaceAll("B","Z");
+            String ret = object.toString().replaceAll("B", "Z");
+            return ret;
         } else {
             return null;
         }
