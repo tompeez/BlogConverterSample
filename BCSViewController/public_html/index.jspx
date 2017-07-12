@@ -15,6 +15,11 @@
                 <f:converter converterId="B2ZConverter"/>
               </af:inputText>
               <af:commandButton text="refresh" id="cb1"/>
+              <af:outputText value="current data: #{bindings.myInput1.inputValue}" id="ot2"/>
+              <af:outputText value="current data with converter: #{bindings.myInput1.inputValue}" id="ot3">
+                <f:converter converterId="B2ZConverter"/>
+              </af:outputText>
+              <af:commandButton text="Converter with DB Data" id="cb2" action="emp"/>
             </af:panelGroupLayout>
             <!-- id="af_one_column_header_stretched"  -->
           </f:facet>

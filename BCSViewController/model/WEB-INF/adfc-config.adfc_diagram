@@ -9,6 +9,8 @@
       <property
          name="page">/index.jspx</property>
       <property
+         name="thumbnailExpanded">false</property>
+      <property
          name="description">&lt;html>&lt;p>&lt;b>index&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
@@ -17,4 +19,74 @@
       <property
          name="x">556.0</property>
    </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">emp</property>
+      <property
+         name="page">/emp.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>emp&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">107.03711</property>
+      <property
+         name="x">755.0</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View2"
+      to="View3">
+      <property
+         name="fromOutcome">emp</property>
+      <property
+         name="sdm:polyPoints">R46,597.0,116.555664,713.61163,103.555664,L46</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="View3"
+      to="View2">
+      <property
+         name="fromOutcome">start</property>
+      <property
+         name="sdm:polyPoints">L54,714.0,110.555664,597.3877,123.555664,R54</property>
+   </ControlFlowCase>
+   <View
+      id="View6">
+      <property
+         name="activityId">empdetail</property>
+      <property
+         name="page">/empdetail.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>empdetail&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">268.167</property>
+      <property
+         name="x">754.0</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View3"
+      to="View6">
+      <property
+         name="fromOutcome">detail</property>
+      <property
+         name="sdm:polyPoints">B44,751.5,161.05566,750.5,214.11963,T44</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase8"
+      from="View6"
+      to="View3">
+      <property
+         name="fromOutcome">emp</property>
+      <property
+         name="sdm:polyPoints">T56,757.5,214.18555,758.5,161.12154,B56</property>
+   </ControlFlowCase>
 </SDM>

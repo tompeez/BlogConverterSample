@@ -3,4 +3,35 @@
   <view id="index">
     <page>/index.jspx</page>
   </view>
+  <view id="emp">
+    <page>/emp.jspx</page>
+  </view>
+  <view id="empdetail">
+    <page>/empdetail.jspx</page>
+  </view>
+  <control-flow-rule id="__1">
+    <from-activity-id id="__2">index</from-activity-id>
+    <control-flow-case id="__4">
+      <from-outcome id="__5">emp</from-outcome>
+      <to-activity-id id="__3">emp</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__6">
+    <from-activity-id id="__7">emp</from-activity-id>
+    <control-flow-case id="__8">
+      <from-outcome id="__10">start</from-outcome>
+      <to-activity-id id="__9">index</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__12">
+      <from-outcome id="__13">detail</from-outcome>
+      <to-activity-id id="__11">empdetail</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__14">
+    <from-activity-id id="__15">empdetail</from-activity-id>
+    <control-flow-case id="__16">
+      <from-outcome id="__18">emp</from-outcome>
+      <to-activity-id id="__17">emp</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
 </adfc-config>

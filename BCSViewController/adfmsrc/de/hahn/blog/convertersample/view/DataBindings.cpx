@@ -4,8 +4,18 @@
              ClientType="Generic">
   <pageMap>
     <page path="/index.jspx" usageId="de_hahn_blog_convertersample_view_indexPageDef"/>
+    <page path="/emp.jspx" usageId="de_hahn_blog_convertersample_view_empPageDef"/>
+    <page path="/empdetail.jspx" usageId="de_hahn_blog_convertersample_view_empdetailPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="de_hahn_blog_convertersample_view_indexPageDef" path="de.hahn.blog.convertersample.view.pageDefs.indexPageDef"/>
+    <page id="de_hahn_blog_convertersample_view_empPageDef" path="de.hahn.blog.convertersample.view.pageDefs.empPageDef"/>
+    <page id="de_hahn_blog_convertersample_view_empdetailPageDef" path="de.hahn.blog.convertersample.view.pageDefs.empdetailPageDef"/>
   </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="BCSAppModuleDataControl" Package="de.hahn.blog.convertersample.model.facade"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true" SupportsFindMode="true" SupportsRangesize="true"
+                     SupportsResetState="true" SupportsSortCollection="true" Configuration="BCSAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
 </Application>
